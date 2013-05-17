@@ -1,0 +1,22 @@
+[
+  { "keys": ["super+ctrl+r"],     "command": "reindent" },
+  { "keys": ["ctrl+alt+shift+w"], "command": "close_all" },
+  // Use OpenRecentFiles package to reopen more than 1 previously closed file.
+  // { "keys": ["ctrl+shift+t"],  "command": "open_recent_file", "args": {"index": 1 } },
+
+  // FileDiffs
+  { "keys": ["ctrl+shift+d"], "command": "file_diff_menu" },
+  { "keys": ["ctrl+shift+c"], "command": "file_diff_clipboard" },
+  { "keys": ["ctrl+shift+s"], "command": "file_diff_selections" },
+
+  // CoffeScript
+  { "keys": ["super+j"], "command": "coffeescript_to_javascript" },
+  { "keys": ["super+m"], "command": "coffeescript_to_js_console" },
+
+  // ERB
+  { "keys": ["ctrl+shift+."], "command": "erb" , "context":
+    [
+      { "key": "selector", "operator": "equal", "operand": "text.html.ruby, text.haml, source.yaml, source.css, source.scss, source.js, source.coffee" }
+    ]
+  }
+]
