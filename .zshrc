@@ -11,6 +11,10 @@ ZSH_THEME="robbyrussell"
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
 alias dotfiles="subl ~/Projects/dotfiles"
+# Gem
+alias remove_gems='gem list | cut -d" " -f1 | xargs gem uninstall -aIx'
+# Ruby
+alias psruby="ps aux | grep ruby"
 # Rails
 alias rc="rails c"
 alias rs="rails s"
@@ -62,3 +66,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=$PATH:~/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/usr/local/MacGPG2/bin
+
+eval "$(rbenv init -)"
+
+export EDITOR="subl"
