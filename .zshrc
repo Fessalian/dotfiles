@@ -18,11 +18,11 @@ alias psruby="ps aux | grep ruby"
 # Rails
 alias rc="rails c"
 alias rs="rails s"
+alias rdbdc="rake db:drop db:create"
+alias rdbdcm="rake db:drop db:create dg:migrate"
 # Parallel tests
 alias rpp="rake parallel:prepare"
 alias rps="rake parallel:spec"
-# Bundler
-alias be="bundle exec"
 # Nowshop
 alias ns="cd ~/Projects/nowshop"
 alias nsb="cd ~/Projects/nowshop-backup"
@@ -31,6 +31,12 @@ alias nspsql="psql -h localhost now_shop_development now_shop"
 # Nowshop deploy
 alias nds='bundle exec knife ssh "role:web-staging" -x deploy "sudo chef-client"'
 alias ndp='bundle exec knife ssh "role:web-production" -x deploy "sudo chef-client"'
+# Nowshop Postgres
+alias nspg_dump="pg_dump -Fc --no-acl --no-owner -h localhost -U now_shop now_shop_development > "
+alias nspg_restore="pg_restore --verbose --clean --no-acl --no-owner -h localhost -U now_shop -d now_shop_development "
+# Nowshop logs
+alias nstail_product="tail -f log/development_product.log"
+alias nstail_category="tail -f log/development_category.log"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
