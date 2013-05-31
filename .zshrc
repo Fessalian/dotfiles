@@ -28,6 +28,8 @@ alias ns="cd ~/Projects/nowshop"
 alias nsb="cd ~/Projects/nowshop-backup"
 alias nsc="cd ~/Projects/nowshop-chef"
 alias nspsql="psql -h localhost now_shop_development now_shop"
+# Nowshop rakes
+alias rpu="rake products:update"
 # Nowshop deploy
 alias nds='bundle exec knife ssh "role:web-staging" -x deploy "sudo chef-client"'
 alias ndp='bundle exec knife ssh "role:web-production" -x deploy "sudo chef-client"'
