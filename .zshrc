@@ -19,7 +19,7 @@ alias psruby="ps aux | grep ruby"
 alias rc="rails c"
 alias rs="rails s"
 alias rdbdc="rake db:drop db:create"
-alias rdbdcm="rake db:drop db:create dg:migrate"
+alias rdbdcm="rake db:drop db:create db:migrate"
 # Parallel tests
 alias rpp="rake parallel:prepare"
 alias rps="rake parallel:spec"
@@ -69,7 +69,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git brew ruby rake rails bundler)
+plugins=(git brew ruby rake rails3 bundler)
 
 source $ZSH/oh-my-zsh.sh
 
