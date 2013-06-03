@@ -23,6 +23,8 @@ alias rdbdcm="rake db:drop db:create db:migrate"
 # Parallel tests
 alias rpp="rake parallel:prepare"
 alias rps="rake parallel:spec"
+# Dotfiles
+alias dt="cd ~/Projects/dotfiles"
 # Nowshop
 alias ns="cd ~/Projects/nowshop"
 alias nsb="cd ~/Projects/nowshop-backup"
